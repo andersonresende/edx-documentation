@@ -75,7 +75,7 @@ In English source files, look for comments addressed to translators from writers
 
 
 ***************************************
-Ordered and Bulleted Lists
+Ordered and Unordered Lists
 ***************************************
 
 Use hash symbols for ordered lists.
@@ -90,7 +90,7 @@ Use hash symbols for ordered lists.
  Ordered lists usually use numerals. Ordered lists inside other ordered lists
  use letters.
 
-Use asterisks for bulleted lists.
+Use asterisks for unordered (bulleted) lists.
 
 ::
 
@@ -103,9 +103,15 @@ Use asterisks for bulleted lists.
 Nested Lists or Content
 =======================
 
-To include a bulleted list inside an ordered list, indent the bulleted list
-three spaces. The bulleted list must be flush with the text in the ordered
-list.
+You can include content including additional lists and code examples inside
+lists.
+
+Unordered List inside Ordered List
+***************************************
+
+To include an unordered list inside an ordered list, indent the unordered list
+three spaces. The first bullet in the unordered list must be flush with the
+text in the ordered list.
 
 ::
 
@@ -121,9 +127,16 @@ list.
 
   #. Select **Save Changes**.
 
-To include a numbered list inside a bulleted list, indent the numbered list
-two spaces. The numbered list must be flush with the text in the bulleted
-list.
+.. image:: /Images/Lists_UL_inside_OL.png
+ :width: 500
+ :alt: An unordered (bulleted) list inside an ordered (numbered) list.
+
+Ordered List inside Unordered List
+***************************************
+
+To include an ordered list inside an unordered list, indent the ordered list
+two spaces. The first number or letter of the ordered list must be flush with
+the text in the unordered list.
 
 ::
 
@@ -139,9 +152,41 @@ list.
 
   * Select **Save Changes**.
 
-To include another ordered list inside a numbered list, indent the second
+.. There isn't a screen shot of the above example yet because these lists don't
+.. render correctly locally, and searching for an example in the built docs
+.. online was taking too much time.
+
+Unordered List inside Unordered List
+***************************************
+
+To include an unordered list inside another unordered list, indent the second
+unordered list two spaces. The first bullet of the second unordered list must
+be flush with the text in the unordered list.
+
+::
+
+  * Review your entry to verify that the key is accurate and that it is
+    surrounded by quotation marks. If there is a list of keys, they must be
+    comma separated.
+
+    #. In this example, the key for the Annotation Problem tool is the only
+       value in the list.
+
+    #. In this example, the key for the Annotation Problem tool is added at the
+       beginning of a list of other keys.
+
+  * Select **Save Changes**.
+
+.. image:: /Images/Lists_UL_inside_UL.png
+ :width: 500
+ :alt: An ordered (numbered) list inside an unordered (bulleted) list.
+
+Ordered List inside Ordered List
+***************************************
+
+To include another ordered list inside an ordered list, indent the second
 ordered list three spaces. The second ordered list must be flush with the text
-in the numbered list. The first numbered list uses numerals, and the second
+in the numbered list. The first ordered list uses numerals, and the second
 uses letters.
 
 ::
@@ -157,6 +202,13 @@ uses letters.
         the beginning of a list of other keys.
 
   #. Select **Save Changes**.
+
+.. There isn't a screen shot of the above example yet because these lists don't
+.. render correctly locally, and searching for an example in the built docs
+.. online was taking too much time.
+
+Code, Images, and Other Content inside Lists
+*********************************************
 
 To include content such as code or an image inside a list, position the code or
 image directive flush with the text in the list. That is, indent three spaces
@@ -597,7 +649,4 @@ being displayed in different colors.
                 <p>PLACEHOLDER: Detailed explanation of solution</p>
               </solution>
             </problem>
-
-
-
 
